@@ -1,3 +1,49 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding:0;
+    margin:0;
+    border:0;
+    width:100%;
+}
+.start-video{
+    position:fixed;
+    top:0;
+    width:98.7vw;
+    height:100vh;
+    background:white;
+    z-index:100;
+}
+.start-video iframe {
+    /* border-radius: 5px; */
+    height: 100%;
+    width: 100%;
+}
+.start-video .skip-button{
+    position:absolute;
+    bottom:20vh;
+    left:47vw;
+    display:block;
+    min-width:5vw;
+    /* z-index:200; */
+}
+.start-video .skip-button .button{
+    position:relative;
+    box-sizing: border-box;
+    background: rgba(10,10,10,.5);
+    color:white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding:.7em 1.5em;
+    cursor:pointer;
+}
+
+
+.wrapper{
+    display:none;
+}
+
 header.header {
     background-color: #1a1a18;
     background-repeat: no-repeat;
@@ -49,7 +95,7 @@ header.header .nav>li>a:hover,
 header.header .nav>li>a:focus {
     text-decoration: none;
     background-color: transparent;
-    color: #000;
+    color:#563dc4;
 }
 
 header.header .sign_up {
@@ -635,3 +681,127 @@ footer.footer .footer_last_icon i {
     font-size: 20px;
     margin-left: 20px;
 }
+
+.top-cover{
+    position:relative;
+    height:60vw; /*720px;*/
+    width:100%; /*1519px;*/
+    margin:0;
+    padding: 0;
+    user-select: none;
+}
+@media screen and (min-width: 600px){
+    .top-cover{
+        height: 40vw;
+    }
+}
+
+.top-cover .Slides-container{
+    position: absolute;
+    overflow-x:hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    width: 100%;
+}
+
+.Slides-container::-webkit-scrollbar {
+    display: none;
+}
+.top-cover .Slides-container .slide-col{
+    display:flex;
+    flex: 0 0 100%;
+    transition:.5s;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Righteous', cursive;
+}
+
+.top-cover .Slides-container .slide-col .slide-wrap{
+    flex:0 0 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.mySlides{
+    position:absolute;
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: .1em;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    font-size:7vw;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color:white;
+    text-decoration: none;
+}
+.top-cover #slide-bullets{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    width:100%;
+    justify-content: center;
+    bottom:0;
+    margin: 0;
+    padding: 1%;
+}
+
+.top-cover #slide-bullets .bullets{
+    min-width: 2vw;
+    min-height: 2vw;
+    border-radius: 50%;
+    margin: 0 .3vw;
+    transition: .7s;
+    background: #FFFFFF;
+    border: 1px black solid;
+}
+
+.top-cover #slide-bullets .active-bullet{
+    background: #333;
+    box-shadow: 2px 2px 4px black;
+}
+
+/*for Displaying text above each slide */
+
+.Overlay-text{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    position: absolute;
+    width:100%;
+    min-height: 20vh;
+    z-index: 0;
+    color:white;
+    background: linear-gradient(145deg, rgba(100,100,100,.5)60%,rgba(200,200,200,.6) 40%);
+    font-size:1.5em;
+}
+
+/* Changing background of overlay of alternate slide*/
+/*
+.slide-col:nth-child(odd) .Overlay-text{
+    background: linear-gradient(30deg, rgba(100,100,100,.5)60%,rgba(200,200,200,.5) 40%);
+}
+*/

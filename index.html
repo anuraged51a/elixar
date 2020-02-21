@@ -25,6 +25,12 @@
 </head>
 
 <body class="loading">
+    <div class="start-video">
+        <iframe src="https://www.youtube.com/embed/7SwZUNDsWaM?autoplay=1&mute=1" frameborder="0" allowfullscreen allow="autoplay" ></iframe>
+        <div class="skip-button">
+            <div class="button" onclick="skip_video()" >Skip</div>
+        </div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -39,13 +45,13 @@
                         <div class="menu">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Achievements</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="#project">Services</a></li>
+                                <li><a href="#user_part">Experience</a></li>
+                                <li><a href="#team">About Us</a></li>
+                                <li><a href="#contact_area">Careers</a></li>
                             </ul>
                             <div class="sign_up">
-                                <p><a href="#">Find Us</a></p>
+                                <p><a href="#">Devloper Portal</a></p>
                             </div>
                         </div>
                     </div>
@@ -55,8 +61,8 @@
                         <div class="text">
                             <h3>Make AR the elixar of your life.</h3>
                             <h6>Textbooks are boring, Elixar Systems wants to change that. Employing Augmented Reality, just point your smartphone and witness the complex concepts in front!</h6>
-                            <a class="button" href="#">Collaborate</a>
-                            <a class="button white" href="#">Experience Demo</a>
+                            <a class="button" href="#contact_area">Collaborate</a>
+                            <a class="button white" href="https://www.youtube.com/watch?v=GamWrRlAlHo&feature=youtu.be ">Experience Demo</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -67,7 +73,7 @@
                 </div>
             </div>
         </header>
-        <section class="project">
+        <section class="project" id = "project">
             <div class="text">
                 <h2>What We Do</h2>
                 <h4>We are a group responsible for all your needs.</h4>
@@ -78,36 +84,36 @@
                     <div class="col-md-4 project_icon">
                         <div class="single_project">
                             <i class="icofont-cubes"></i>
-                            <h3><a href="#">AR</a></h3>
-                            <p>Augmented reality is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information.</p>
+                            <h3><a href="#">E-Pathshala AR</a></h3>
+                            <p>Visualise& Experience over 100+ simulations from the NCERT textbooks. E-Pathshala AR app, with NCERT.</p>
                         </div>
                     </div>
                     <div class="col-md-4 project_icon">
                         <div class="single_project">
                             <i class="icofont-focus"></i>
-                            <h3><a href="#">VR</a></h3>
-                            <p>Virtual reality is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality can include entertainment and educational purposes. </p>
+                            <h3><a href="#">Elixar Memro AR</a></h3>
+                            <p>Do you remember how your home is like but not your homework? Visualize & Memorize with Elixar Memro AR empowered Mind Palace Study Technique, Point your phone to visualize simulations, Venture deep into the concept and imbibe not rote-learn.</p>
                         </div>
                     </div>
                     <div class="col-md-4 project_icon">
                         <div class="single_project">
                             <i class="icofont-dashboard-web"></i>
-                            <h3><a href="#">MR</a></h3>
-                            <p>Mixed reality is the merging of real and virtual worlds to produce new environments and visualizations, where physical and digital objects co-exist and interact in real time.</p>
+                            <h3><a href="#">AR Science Lab</a></h3>
+                            <p>Science Laboratories for everyone everytime. Simulate the complex experiments for the students. Let them experiment to the deepest detail with highest interactivity. Because education is experimental not theoretical.</p>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <p class="button"><a class="button" href="#">Know More</a></p>
+                        <p class="button"><a class="button" href="dist/index.html" target = "_blank">Know More</a></p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="user_part">
+        <section class="user_part" id = "user_part">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="useres_part">
-                            <div class="row">
+                            <div  id = "project"class="row">
                                 <div class="col-md-3 col-sm-6 user_part_part">
                                     <div class="user_text">
                                         <i class="material-icons">business</i>
@@ -145,7 +151,7 @@
                         <div class="customer_say">
                             <h3>Achievements & <br> Memoirs</h3>
                             <p>Get to know our past experiences and what people have got to say about us.</p>
-                            <a class="button" href="#">Connect with Us</a>
+                            <a class="button" href="#footer">Connect with Us</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
@@ -159,56 +165,56 @@
                                             <div class="vertical_text">
                                                 <img src="img/BITS.png" alt="">
                                                 <h4>BITSpark</h4>
-                                                <p>Winner</p>
+                                                <p>Elixar Systems feels proud to have been declared the winners by the BITS Sparks Enterpreneurship Panel after multiple rounds of pitching and interaction.</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
                                                 <img src="img/NCERT.png" alt="">
                                                 <h4>NCERT</h4>
-                                                <p>We are proud to conduct our workshop with Elixar. They have been a great help for us and have helped convert our books into an AR application.</p>
+                                                <p>.E-Pathshala AR app being developed with NCERT currently encompasses 70+ simulations, our goal is to develop a total of 270 simulations. NCERT development’s continuity is largely dependent on Government’s official decisions.</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
-                                                <img src="img/Hackathon-1.png" alt="">
-                                                <h4>Hackathon-1</h4>
-                                                <p>First Prize</p>
+                                                <img src="img/mahindra.jpg" alt="">
+                                                <h4>Mahindra Defense</h4>
+                                                <p>Upcoming Collaboration</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
-                                                <img src="img/Hackathon-2.jpg" alt="">
-                                                <h4>Hackathon-2</h4>
-                                                <p>First Prize</p>
+                                                <img src="img/rajasthan.jpg" alt="">
+                                                <h4>Rajasthan Government</h4>
+                                                <p>Upcoming Collaboration</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
                                                 <img src="img/BITS.png" alt="">
                                                 <h4>BITSpark</h4>
-                                                <p>Winner</p>
+                                                <p>Elixar Systems feels proud to have been declared the winners by the BITS Sparks Enterpreneurship Panel after multiple rounds of pitching and interaction.</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
                                                 <img src="img/NCERT.png" alt="">
                                                 <h4>NCERT</h4>
-                                                <p>We are proud to conduct our workshop with Elixar. They have been a great help for us and have helped convert our books into an AR application.</p>
+                                                <p>.E-Pathshala AR app being developed with NCERT currently encompasses 70+ simulations, our goal is to develop a total of 270 simulations. NCERT development’s continuity is largely dependent on Government’s official decisions.</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
-                                                <img src="img/Hackathon-1.png" alt="">
-                                                <h4>Hackathon-1</h4>
-                                                <p>First Prize</p>
+                                                <img src="img/mahindra.jpg" alt="">
+                                                <h4>Mahindra Defense</h4>
+                                                <p>Upcoming Collaboration</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="vertical_text">
-                                                <img src="img/Hackathon-2.jpg" alt="">
-                                                <h4>Hackathon-2</h4>
-                                                <p>First Prize</p>
+                                                <img src="img/rajasthan.jpg" alt="">
+                                                <h4>Rajasthan Government</h4>
+                                                <p>Upcoming Collaboration</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -219,7 +225,7 @@
                 </div>
             </div>
         </section>
-        <section class="team">
+        <section class="team" id = "team">
             <div class="text">
                 <h2>Our Team</h2>
             </div>
@@ -234,7 +240,7 @@
                                             <div class="team-text">
                                                 <h3>Harshit</h3>
                                                 <p>CO-FOUNDER</p>
-                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a> </p>
+                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/harshit016/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -244,8 +250,8 @@
                                         <div class="col-md-12 col-sm-12">
                                             <div class="team-text">
                                                 <h3>Sashakt</h3>
-                                                <p>CEO</p>
-                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a> </p>
+                                                <p>CO-FOUNDER</p>
+                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/sashakt-tripathi/"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -256,7 +262,7 @@
                                             <div class="team-text">
                                                 <h3>Ahmed Faraz</h3>
                                                 <p>CO-FOUNDER</p>
-                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a> </p>
+                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/ahmad-faraaz/"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -266,8 +272,8 @@
                                         <div class="col-md-12 col-sm-12">
                                             <div class="team-text">
                                                 <h3>Sakshi</h3>
-                                                <p>ANALYST</p>
-                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a> </p>
+                                                <p>SOLUTIONS ARCHITECT</p>
+                                                <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/sakshipaliwal/"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -278,7 +284,47 @@
                 </div>
             </div>
         </section>
-        <section class="contact_area">
+        <div class="slider">
+            <div class="top-cover">
+                <div class="Slides-container" id="slide-id">
+                    <div class="slide-col">
+                        <div class="slide-wrap">
+                            <img class="mySlides" src="./img/bits-1.jpg" />
+                            <div class="Overlay-text"><p>Elixar Systems a startup founded in BITSian dorms, went forth to the official conglomeration of BITSians, BGM 2020.</p></div>
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="slide-wrap">
+                            <img class="mySlides" src="./img/iigp.jpg"  />
+                            <div class="Overlay-text"><p>In a nationwide innovation Challenge held and organized by DST, Elixar Systems has emerged as the winning team.</p></div>
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="slide-wrap">
+                                <img class="mySlides" src="./img/iisc.jpg"  />
+                            <div class="Overlay-text"><p>NASSCOM Product Conclave</p></div>
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="slide-wrap">
+                                <img class="mySlides" src="./img/ncert.jpg"  />
+                            <div class="Overlay-text"><p>In an official partnership Elixar Systems and NCERT have formulated a joint-plan to make the educational content experiential and visualization centric for the millions of students studying NCERT educational content.</p></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                
+                <div id="slide-bullets">
+                    <div class="bullets active-bullet"></div>
+                    <div class="bullets"></div>
+                    <div class="bullets"></div>
+                    <div class="bullets"></div>
+                </div>
+            </div>
+        </div>
+        <section class="contact_area" id = "contact_area">
             <div class="text">
                 <h2>Contact Us</h2>
                 <p>Feel free to contact, whether for enquiry or for careers.</p>
@@ -308,7 +354,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id = "footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
@@ -317,7 +363,7 @@
                         </div>
                         <div class="footer_first_menu">
                             <ul>
-                                <li><a href="#">Privecy Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms and Conditions</a></li>
                                 <li><a href="#">About Us</a></li>
                             </ul>
@@ -329,10 +375,10 @@
                                 <div class="col-md-12 col-sm-12">
                                     <ul>
                                         <li><a href="#">Home</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Achievements</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#project">Services</a></li>
+                                        <li><a href="#user_part">Experience</a></li>
+                                        <li><a href="#team">About Us</a></li>
+                                        <li><a href="#contact_area">Careers</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -340,7 +386,7 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="footer_last_icon">
-                                    <p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/elixarsystems/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
                                 </div>
                             </div>
                         </div>
