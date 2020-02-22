@@ -1,0 +1,23 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA5FkiENboylPC74dBiQnZlgWt1mlDgqfU",
+    authDomain: "elixar-f9ed1.firebaseapp.com",
+    databaseURL: "https://elixar-f9ed1.firebaseio.com",
+    projectId: "elixar-f9ed1",
+    storageBucket: "elixar-f9ed1.appspot.com",
+    messagingSenderId: "303510902156",
+    appId: "1:303510902156:web:3ef5610fe83d56089032a9",
+    measurementId: "G-Z3CP4PP0G8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
