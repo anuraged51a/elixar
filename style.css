@@ -266,6 +266,7 @@ section.project .single_project {
     max-width: 380px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 section.project .single_project i {
